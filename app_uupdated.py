@@ -300,8 +300,8 @@ if uploaded_file:
     with tab5:
         st.markdown("###  خريطة توزيع الموظفين حسب الجنسية")
         if 'الجنسية' in df.columns:
-           country_counts = df['الجنسية'].value_counts().reset_index()
-           country_counts.columns = ['الجنسية', 'عدد الموظفين']
+            country_counts = df['الجنسية'].value_counts().reset_index()
+            country_counts.columns = ['الجنسية', 'عدد الموظفين']
 
             fig_map = px.choropleth(
                 country_counts,
