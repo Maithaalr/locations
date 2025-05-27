@@ -46,7 +46,7 @@ if uploaded_file:
     df.columns = df.columns.str.strip()
     df = df.loc[:, ~df.columns.duplicated()]
 
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["نظرة عامة", " تحليلات بصرية"," البيانات المفقودة"," عرض البيانات","الجنسيات"])
+    tab1, tab2, tab3, tab4 = st.tabs(["نظرة عامة", " تحليلات بصرية"," البيانات المفقودة"," عرض البيانات"])
 
     # ---------------- Tab 1 ---------------- #
     with tab1:
